@@ -1,0 +1,24 @@
+* Version: 0.0.1
+
+This is screen state tests for weblocks.
+
+Screen state test is kind of test.
+We capture screenshots on different web application states (after going to some page or clicking some link, button etc.).
+During test runs new screenshots are captured and compared with saved ones. 
+When generated screenshot has some differences from old screenshot exception is thrown.
+
+In this repository test screenshots are saved. 
+
+To use tests you need to ...
+
+1. Set up environment. 
+
+Start weblocks-selenium-tests with command start-full-tests-server. start-full-tests-server needs to be linked in weblocks-selenium-tests directory for this. And all packages from script should be installed.
+
+2. Set up weblocks-selenium-tests configuration. 
+
+weblocks-selenium-tests variable *screen-state-tests-dir* should point to weblocks-screen-state-tests directory. You can either change variable or link weblocks-screen-state-tests directory to weblocks-selenium-tests/screen-tests.
+
+Configuration variable *do-screen-state-tests* should be true.
+
+You should use firefox for testing (*selenium-browser* variable should be same as *selenium-firefox-browser*)
